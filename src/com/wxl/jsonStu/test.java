@@ -21,6 +21,7 @@ public class test {
 //		}
 		 
 		Person p = new Person();
+		System.out.println("test");
 //		PersonJson test = new PersonJson();
 //		String json = null;
 //		for (int i = 0; i < 2; i++) {
