@@ -20,7 +20,7 @@ public class test {
 //			e.printStackTrace();
 //		}
 		 
-//		Person p = new Person();
+		Person p = new Person();
 //		PersonJson test = new PersonJson();
 //		String json = null;
 //		for (int i = 0; i < 2; i++) {
@@ -47,11 +47,20 @@ public class test {
 //			e.printStackTrace();
 //		}
 		
-		 PersonJson t = new PersonJson();
-		 if(t == null){
-			 System.out.println("is null");
-		 }else{
-			 System.out.println("not null");
+//		 PersonJson t = new PersonJson();
+//		 if(t == null){
+//			 System.out.println("is null");
+//		 }else{
+//			 System.out.println("not null");
+//		}
+		
+		p.setAge(1);
+		p.setStuHis(null);
+		if(p == null){
+			System.out.println("p is null");
+		}
+		if(p.getStuHis().isEmpty()||p.getStuHis().size() == 0){
+			System.out.println("no his");
 		}
 	 }
 }

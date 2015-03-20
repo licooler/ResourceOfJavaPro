@@ -99,25 +99,8 @@ public class test {
 		 * 充值面值，单位元，如100,50等
 		 */
 		  String parValue="100";
-		  
 		  String  discountAmount="98"+System.currentTimeMillis()%3;
 		  String  discountCode="A"+System.currentTimeMillis()%3;
-		  
-		  /**
-		   * StringBuffer signBuffer = new StringBuffer();
-		signBuffer.append(reqBean.getMerId());
-		signBuffer.append(reqBean.getActivityCode());
-		signBuffer.append(reqBean.getOrderId());
-		signBuffer.append(reqBean.getSettleDate());
-		signBuffer.append(reqBean.getPhone());
-		signBuffer.append(reqBean.getParValue());
-		signBuffer.append(reqBean.getReserveInfo());
-		signBuffer.append(reqBean.departmentId);
-		signBuffer.append(reqBean.mdseCode);
-		signBuffer.append(reqBean.getDiscountAmount());
-		signBuffer.append(reqBean.getDiscountCode());
-		signBuffer.append(key);
-		   */
 		  
 		  MD5Util md5Util = new MD5Util();
 		  String sign = md5Util.getMD5ofStr(
