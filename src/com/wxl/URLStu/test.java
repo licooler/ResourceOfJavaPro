@@ -30,6 +30,7 @@ public class test {
 	
 	private void req(String url) {
 		URLConnection rulConnection;
+		//test
 		try {
 			URL myUrl = new URL(url);
 			rulConnection = myUrl.openConnection();
