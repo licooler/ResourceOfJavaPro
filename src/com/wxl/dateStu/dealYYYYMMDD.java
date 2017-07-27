@@ -1,5 +1,6 @@
 package com.wxl.dateStu;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -29,6 +30,17 @@ public class dealYYYYMMDD {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	/*
+	 * 获得两个时间中的差值
+	 */
+	public long timeDiff(Date a, Date b){
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+	    long diff = a.getTime() - b.getTime();
+		
+		return diff;
 	}
 	
 	public static void main(String[] args) {

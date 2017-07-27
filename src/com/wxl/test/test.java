@@ -15,7 +15,12 @@ public class test {
 //		System.out.println(m.find());
 		
 		
-		List<String> list = new ArrayList<String>();
+//		List<String> list = new ArrayList<String>();
 		
+		long t  = Long.MAX_VALUE;
+		long timeStamp1 = Long.valueOf("9223370602204131807");
+		String timestamp2 = String.valueOf(Long.MAX_VALUE - timeStamp1); 
+		System.out.println("t:" + t);
+		System.out.println("timestamp2:" + timestamp2);
 	}
 }

@@ -7,19 +7,37 @@
 	<packaging>war</packaging>
 
 	<!-- 引入父类pom -->
-	<!-- 
-	<parent>
-		<groupId>com.wxl</groupId>
-		<artifactId>maven-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../maven-parent/pom.xml</relativePath>
-	</parent>
-	 -->
-
-	<properties></properties>
+	<!-- <parent> <groupId>com.wxl</groupId> <artifactId>maven-parent</artifactId> 
+		<version>0.0.1-SNAPSHOT</version> <relativePath>../maven-parent/pom.xml</relativePath> 
+		</parent> -->
+	
+	<properties>
+		<junit.version>4.10</junit.version>
+		<poi.version>3.12</poi.version>
+	</properties>
 
 	<!-- 添加依赖包 -->
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
 		<dependency>
 			<groupId>com.lmax</groupId>
 			<artifactId>disruptor</artifactId>
@@ -36,6 +54,11 @@
 			<version>20090211</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
@@ -43,7 +66,37 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>${junit.version}</version>
+		</dependency>
+		<!-- logger -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>jdk.tools</groupId>
+			<artifactId>jdk.tools</artifactId>
+			<version>1.7</version>
+			<scope>system</scope>
+			<systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-service</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.refcodes</groupId>
+			<artifactId>refcodes-security</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
